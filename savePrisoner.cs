@@ -1,8 +1,7 @@
 # File           : savePrisoner.cs
 # Author         : Shree Harsha Sridharamurthy
 # Author email   : s.shreeharsha@gmail.com
-# Disclaimer     : This program is solely created by Shree Harsha for academic purposes.
-#                 For use by concerned personnel only. Not to be copied in full or in part.
+# Disclaimer     : For use by concerned personnel only. Released under MIT License - permitted to use this but need to quote the source origin.
 # Program        : Solution for hackerrank question posted here:https://www.hackerrank.com/contests/101hack35/challenges/save-the-prisoner
 # Details        :
 /*A jail has N prisoners, and each prisoner has a unique id number, S, ranging from 1 to N. There are M sweets that must be distributed to the prisoners.
