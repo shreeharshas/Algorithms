@@ -1,5 +1,5 @@
 /*
-# File           : diagonalDifference.cs
+# File           : angryProfessor.cs
 # Author         : Shree Harsha Sridharamurthy
 # Author email   : s.shreeharsha@gmail.com
 # Disclaimer     : For use by concerned personnel only. Released under MIT License - permitted to use this but need to quote the source origin.
