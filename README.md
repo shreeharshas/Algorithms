@@ -1,2 +1,1 @@
-# hackerrank
-My solutions to hackerrank questions
+My solutions to hackerrank and leetcode questions
