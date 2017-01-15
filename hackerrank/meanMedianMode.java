@@ -36,12 +36,14 @@ public class Solution {
         Iterator it = h.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
-            
-            int v = (int)pair.getValue();
-            if(v >= maxModeVal){
-                maxModeVal = Math.max(v, maxModeVal);
-                int t_mode = (int)pair.getKey();
-                mode = Math.min(mode, t_mode);
+            int t_mode = (int)pair.getKey();
+            int t_val = (int)pair.getValue();
+            if(t_val > maxModeVal){
+                maxModeVal = Math.max(t_val, maxModeVal);
+                mode = t_mode;
+            }
+            else if(t_val==maxModeVal){
+                mode = Math.min(mode,t_mode);
             }
         }
         System.out.println(mean);
