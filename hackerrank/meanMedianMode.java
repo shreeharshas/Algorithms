@@ -6,6 +6,9 @@ public class Solution {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
+        if(n<1)
+            return;
+        
         int[] X = new int[n];
         int sum = 0;
         HashMap<Integer, Integer> h = new HashMap<>();
@@ -25,15 +28,21 @@ public class Solution {
         
         float mean = (float)sum/n;
         float median = (n%2==0)?(float)(X[n/2]+X[(n/2)-1])/2:X[n/2];
+               
+        HashMap.Entry<Integer, Integer> entry = h.entrySet().iterator().next();
+        int mode = entry.getKey();
+        int maxModeVal = entry.getValue();
         
-        int mode = X[0];
-        int maxVal = 0;
         Iterator it = h.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pair = (Map.Entry)it.next();
+            
             int v = (int)pair.getValue();
-            maxVal = Math.max(v,maxVal);
-            mode = (int)pair.getKey();
+            if(v >= maxModeVal){
+                maxModeVal = Math.max(v, maxModeVal);
+                int t_mode = (int)pair.getKey();
+                mode = Math.min(mode, t_mode);
+            }
         }
         System.out.println(mean);
         System.out.println(median);
