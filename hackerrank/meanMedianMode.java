@@ -16,10 +16,15 @@ public class Solution {
                 int c = h.get(X[i]);
                 h.put(X[i],++c);
             }
+            else{
+                h.put(X[i],1);
+            }
         }
         
+        Arrays.sort(X);
+        
         float mean = (float)sum/n;
-        float median = (n%2==0)?(X[n/2]+X[(n+1)/2])/2:X[n/2];
+        float median = (n%2==0)?(float)(X[n/2]+X[(n/2)-1])/2:X[n/2];
         
         int mode = X[0];
         int maxVal = 0;
