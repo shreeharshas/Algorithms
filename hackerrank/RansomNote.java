@@ -7,9 +7,10 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class RansomNote {
 
     public static void main(String[] args) {
+        Solution sln = new Solution();
         Scanner in = new Scanner(System.in);
         int m = in.nextInt();
         int n = in.nextInt();
@@ -30,6 +31,8 @@ public class Solution {
             }
         }
         
+        sln.printMap(magazine, -1);
+        
         for(int ransom_i=0; ransom_i < n; ransom_i++){
             String s = in.next();
             if(!magazine.containsKey(s)){
@@ -38,13 +41,21 @@ public class Solution {
             }
             else{
                 int count = magazine.get(s);
-                magazine.put(s, --count);
+                sln.printMap(magazine, ransom_i);
                 if(count<0){
                     System.out.println("No");
                     return;
                 }
+                magazine.put(s, --count);
             }
         }
         System.out.println("Yes");
+    }
+    
+    void printMap(HashMap<String, Integer> h, int i){
+        System.out.println("\nLoop:"+i);
+        for (HashMap.Entry<String, Integer> entry : h.entrySet()) {
+            System.out.println(entry.getKey()+" : "+entry.getValue());
+        }
     }
 }
