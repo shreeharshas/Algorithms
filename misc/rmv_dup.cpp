@@ -9,12 +9,12 @@ struct Node {
 };
 
 void removeDuplicates(Node *lst) {
-  unordered_map hashmap;
+  unordered_map<int,int> hashmap;
   struct Node *prev = lst;
 
   while(lst!=null){//loop through list
     if(hashmap.contains(lst.data)){//check if already present in hashmap
-                                    prev  lst
+                                   // prev  lst
       // 12->34->45->12->null
       prev->next=lst->next;
       lst=lst->next;
