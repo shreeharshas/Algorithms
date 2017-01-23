@@ -30,8 +30,8 @@ string friendly_numbers(int x, int y) {
     List<int> pDivX = GetProperDivisors(x);
     List<int> pDivY = GetProperDivisors(y);
     
-    sum_x= pDivX.Sum(i => Convert.ToInt32(i));
-    sum_y= pDivY.Sum(i => Convert.ToInt32(i));
+    sum_x= pDivX.Sum();
+    sum_y= pDivY.Sum();
     Console.WriteLine(sum_x+","+sum_y);
     return (sum_x==y&&sum_y==x?"Yes":"No");
 }
