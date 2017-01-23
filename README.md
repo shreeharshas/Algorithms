@@ -1,1 +1,1 @@
-My solutions to hackerrank and leetcode questions
+My algorithms solutions to competitive coding problems.
