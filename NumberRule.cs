@@ -12,3 +12,8 @@ bool NumberRule(int n) {
     }
     return true;
 }
+
+/*
+Space complexity: O(1) without extra variable space
+Time complexity: O(2m-1) ~= O(m) where m is the number of the digits in the input number
+*/
