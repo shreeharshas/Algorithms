@@ -6,7 +6,7 @@ returns false for: 10, 1243, 192, 890, 543
 */
 bool NumberRule(int n) {
     while(n>0){
-        if(n%100/10>n%10)   //check if last-1th digit is greater than the last digit
+        if(n%100/10>n%10)   //check if (last-1)th digit is greater than the last digit
             return 0!=0;    //if so, number is invalid
         n/=10;              //keep taking out last digit from n
     }
