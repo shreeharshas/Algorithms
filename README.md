@@ -1,1 +1,1 @@
-My algorithms solutions to competitive coding problems.
+My solutions to competitive coding problems.
