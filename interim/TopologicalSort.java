@@ -36,7 +36,7 @@ public class TopologicalSort{
                 }
             }
         }
-        if(order.length == g.nodes.length){
+        if(order.length == g.nodes.length) {
             System.out.println("Completed topological sort");
         }
         else{
