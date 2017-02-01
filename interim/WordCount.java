@@ -1,10 +1,6 @@
-//*******************************************************************
-// NOTE: please read the 'More Info' tab to the right for shortcuts.
-//*******************************************************************
-
 import java.lang.Math; // headers MUST be above the first class
 
-import java.util.HashMap;
+import java.util.*;
 public class HelloWorld{
 public static void main(String []args){
    String inp = "practice makes perfect. get perfect by practice. just practice!";
@@ -47,7 +43,7 @@ public static void main(String []args){
    
    for(EntrySet<Integer, ArrayList<String>> finalES : hmapNew.getEntrySet()){//--->O(n)
       for(int x=0;x<finalES.getValue().length;x++){//--->O(k)
-         System.out.println(finalES.Value.get(x)+":"+es.getKey());
+         System.out.println(finalES.Value.get(x)+":"+finalES.getKey());
       }      
    }
 }
