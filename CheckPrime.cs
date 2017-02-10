@@ -29,11 +29,11 @@ namespace Solution
             HashSet<int> nums = new HashSet<int>();
             
             int limit = (int)Math.Ceiling(Math.Sqrt(n));
-            for(int i=2;i<limit;i++){                   // O(√n)
+            for(int i=3;i<limit;i++){                   // O(√n)
                 nums.Add(i);
             }
             
-            for(int i=2;i<limit;i++){                   // O(√n)
+            for(int i=3;i<limit;i++){                   // O(√n)
                 if(nums.Contains(i)){
                     if(n%i==0){
                        Console.WriteLine(n+" is not a prime number, it is divisible by "+nums.First());
