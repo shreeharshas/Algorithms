@@ -7,7 +7,7 @@ using System.IO;
 class Solution {
     static void Main(String[] args) {
         string s = Console.ReadLine();
-        Console.WriteLine(reduce(s));
+        Console.WriteLine(new Solution().reduce(s));
     }
     
     private string reduce(string s){
@@ -30,5 +30,6 @@ class Solution {
                 return reduce(s2);
             }
         }
+        return "Empty String";
     }
 }
