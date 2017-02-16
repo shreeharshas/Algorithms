@@ -1,4 +1,3 @@
-/*Interim version, to be updated*/
 /*Based on hackerrank question at https://www.hackerrank.com/challenges/reduced-string */
 
 using System;
@@ -27,9 +26,10 @@ class Solution {
         for(int i=0;i<s.Length-1;i++){
             if(s[i]==s[i+1]){
                 string s2 = s.Remove(i,1);
-                return reduce(s2);
+                return reduce(s2.Remove(i,1));
             }
         }
-        return "Empty String";
+        //Console.WriteLine("oops "+ s);
+        return s;
     }
 }
