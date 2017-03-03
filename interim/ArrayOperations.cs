@@ -7,8 +7,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-class Solution {
-    static void Main(String[] args) {
+class ArrayOperations {
+    static void Main(String[] args) {   //rename to shift(int n, int d)
         string s = Console.ReadLine();
         int n = Convert.ToInt32(s.Split(' ')[0]);
         int d = Convert.ToInt32(s.Split(' ')[1]);
