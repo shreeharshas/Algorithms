@@ -1,3 +1,6 @@
+/* FizzBuzz - prints "fizz" for multiples of 3, "buzz" for multiples of 5, 
+"fizzbuzz" for multiples of both and the number itself if none of these*/
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
